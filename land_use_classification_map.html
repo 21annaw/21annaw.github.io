@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Land Use Classification Map</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+         <script type="module" src="https://js.arcgis.com/5.0/embeddable-components/"></script>
+        <style>
+            body.land_use_classification_map #header {
+                background-image: url("images/purple_green_utrecht.png");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                filter: saturate(0.5);
+                min-height: 100vh;
+            }
+            body.land_use_classification_map #header .inner {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                text-align: center;
+                padding: 3rem 1rem;
+            }
+            body.land_use_classification_map #header .inner header {
+                width: 100%;
+            }
+        </style>
+	</head>
+	<body class="land_use_classification_map is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+						<header style="color: #ffffff; ">
+							<h1><a href="index.html" id="logo" style="color: #ffffff;">Land Use Classification Map</a></h1>
+							<h2 style="color: #ffffff !important; font-size: 1.5em;"><strong> Land Use Classification Map</strong></h2>
+							<p style="color: #ffffff !important;"><strong> Description:</strong>Using ArcGIS, I classfied satellite imagery into different land use types.</p>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">My projects</a>
+									<ul>
+										<li><a href="no-sidebar.html">Choropleth Map</a></li>
+										<li><a href="elevation_map.html">Relative Elevation Map</a></li>
+										<li><a href="vegetation_indices.html">Vegetation Indices Map</a></li>
+										</li>
+										<li><a href="vector_map.html">Vector Map</a></li>
+                                        <li><a href="land_use_classification_map.html">Land Use Classification Map</a></li>
+                                        <li><a href="multi_variable_map.html">Multivariable Map</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<article id="main" class="special">
+							<header>
+								<p style="color: #993317; text-align: center; font-size: 23px">
+									How does map classification work? 
+                                    </p>
+                                <p> YAP YAP YAP</p>
+                            </header>
+									<div class="two-column-layout" style="display:flex; flex-wrap:wrap; align-items:center; gap:2rem; justify-content:center;">
+										<div class="column" style="flex:1 1 320px; max-width:550px;">
+							<img src="images/true_color_utrecht.png" alt="REM Map Example" style="width:100%; height:auto; display:block;" />
+                                        </div>
+						<div class="column" style="flex:1 1 320px; max-width:550px;">
+							<h2 style="color: #993317; text-align: center; font-size: 20px; margin-bottom: 25px">Establishing the ROI and collecting the basic data</h2>
+                                            <p> I picked a ROI in Mozambique, not too far from Lichinga. I chose this location since I noticed Mozambique had a high level of forest loss over the past few years, including in the regions surrounding Lichinga. The date ranges I choose were a full year, from January 1st to December 31st, and I choose to compare 2018 and 2024. Shorter ranges of months seemed to generate insufficient or partially faulty data. I felt as though a year provided the most accurate average data, and accounted for changes in season throughout the year. </p>
+						</div>
+					</div>
+
+					<div class="container">
+						<article id="main" class="special">
+									<div class="two-column-layout" style="display:flex; flex-wrap:wrap; align-items:center; gap:2rem; justify-content:center;">
+										<div class="column" style="flex:1 1 320px; max-width:550px;">
+											<h2 style="color: #993317; text-align: center; font-size: 20px; margin-bottom: 25px">Establishing the ROI and collecting the basic data</h2>
+															<p> I picked a ROI in Mozambique, not too far from Lichinga. I chose this location since I noticed Mozambique had a high level of forest loss over the past few years, including in the regions surrounding Lichinga. The date ranges I choose were a full year, from January 1st to December 31st, and I choose to compare 2018 and 2024. Shorter ranges of months seemed to generate insufficient or partially faulty data. I felt as though a year provided the most accurate average data, and accounted for changes in season throughout the year. </p>
+										</div>
+										<div class="column" style="flex:1 1 320px; max-width:550px;">
+											<img src="images/red_color_utrecht.png" alt="REM Map Example" style="width:100%; height:auto; display:block;" />
+                                        </div>
+                                    </div>
+							<div class="two-column-layout" style="display:flex; flex-wrap:wrap; align-items:center; gap:2rem; justify-content:center;">
+										<div class="column" style="flex:1 1 320px; max-width:550px;">
+							<img src="images/purple_green_utrecht.png" alt="REM Map Example" style="width:100%; height:auto; display:block;" />
+                                        </div>
+						<div class="column" style="flex:1 1 320px; max-width:550px;">
+							<h2 style="color: #993317; text-align: center; font-size: 20px; margin-bottom: 25px">Establishing the ROI and collecting the basic data</h2>
+                                            <p> I picked a ROI in Mozambique, not too far from Lichinga. I chose this location since I noticed Mozambique had a high level of forest loss over the past few years, including in the regions surrounding Lichinga. The date ranges I choose were a full year, from January 1st to December 31st, and I choose to compare 2018 and 2024. Shorter ranges of months seemed to generate insufficient or partially faulty data. I felt as though a year provided the most accurate average data, and accounted for changes in season throughout the year. </p>
+						</div>
+					</div>
+
+                <div class="row" style="margin-top: 20px;">
+							<article class="col-4 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/DTM_MAP.png" alt="" /></a>
+								<header>
+									<h3 style="color: #990952;"> ... </h3>
+								</header>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/combo_partially_overlayed.png" alt="" /></a>
+								<header>
+									<h3 style="color: #990952;"> DTM Map with 40% Overlay </h3>
+								</header>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/transparant_map_overlay.png" alt="" /></a>
+								<header>
+									<h3 style="color: #990952;"> DTM Map with 70% Overlay </h3>
+								</header>
+							</article>
+                            
+        <div class="row" style="margin-top: 20px;">
+							
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

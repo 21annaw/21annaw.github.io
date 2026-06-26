@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Vector Map</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			body.vector_map #header {
+				background-image: url("images/Isochrome_map_banks_final.png");
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: 185%;
+				min-height: 100vh;
+                filter: saturate(0.5);
+			}
+		</style>
+	</head>
+	<body class="no-sidebar is-preload vector_map">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header style="color: #ffffff;">
+							<h1><a href="index.html" id="logo" style="color: #ffffff;">Vector Map</a></h1>
+									<h2 style="text-align: center; color: #ffffff !important; font-size: 1.5em;"><strong> Vector Map</strong></h2>
+											<p style="text-align: center; color: #ffffff !important;"> A vector map of walking distances to banks in Utrecht.</p>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">My projects</a>
+									<ul>
+										<li><a href="no-sidebar.html">Choropleth Map</a></li>
+										<li><a href="elevation_map.html">Relative Elevation Map</a></li>
+										<li><a href="vegetation_indices.html">Vegetation Indices Map</a></li>
+										<li><a href="vector_map.html">Vector Map</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<article id="main" class="special">
+							<header>
+								<p style="color: #075b46; text-align: center; font-size: 20px">
+									
+								</p>
+							</header>
+									<div class="two-column-layout" style="display:flex; flex-wrap:wrap; align-items:center; gap:2rem; justify-content:center;">
+										<div class="column" style="flex:1 1 320px; max-width:550px;">
+											<h2 style="color: #075b46; text-align: center; font-size: 20px; margin-bottom: 25px">What did I create, and why?</h2>
+                                            <p> The spatial question I am trying to answer with this map is: how many residences (houses and apartments) are within 1 to 5 minute walking distances from banks? More specifically, I want to know the distribution of the residences within these different isochrome circles/layers. </p>
+                                            <p>I used the isochrome layers in order to reflect how many residences (houses and apartments) were contained within each extended layer of time frame. I used the counting feature and then added up the total, first for each timeframe, then for each bank’s surrounding layers respectively.
+</p>
+<p>I chose this method because my goal was to figure out how exactly residences were distributed between different time frames. I believe that without labels, this would be a rather difficult (if not impossible) map to read, so therefore I added additional labels and information, in order to create a more interactive map. 
+</p>
+										</div>
+										<div class="column" style="flex:1 1 320px; max-width:550px;">
+											<img src="images/Isochrome_map_banks_final.png" alt="Vector Map Example" style="width:100%; height:auto; display:block;" />
+                                        </div>
+                                    </div>
+                                <p></p>
+                                <p></p>
+				    
+							<h2 style="color: #075b46; text-align: center; font-size: 20px; margin-bottom: 25px; margin-top: 25px"> Analysis of final vector map </h2>
+							<div class="two-column-layout" style="display:flex; flex-wrap:wrap; gap:2rem; align-items:start; justify-content:center;">
+								<div class="column" style="flex:1 1 320px; max-width:600px;">
+									<h3 style="color: #075b46; text-align: left; font-size: 15px; margin-bottom: 15px">From my map, a few key points become clear.</h3>
+									<p>First of all, the banks are clustered together around the city center, especially surrounding Utrecht Centraal (our train station). Five out of the six isochromes overlap with each other, indicating a hotspot.</p>
+									<p>From the count analysis, we can conclude a few facts. When adding up all counts per timeframe, it results in: 1,202 houses and 933 apartments within a 5 minute walk of a bank; 59 houses and 43 apartments within a 2 minute walk of a bank; 6 houses and 9 apartments within a 1 minute walk of a bank.</p>
+									<p>Despite overlap occurring, since this consistent overlap can be attributed equally to all timeframes, the ratio will stay the same. There are numerous isochrome areas that have zero houses within a 1 or 2 minute walk of a bank. This may be partially due to the location of most of the banks being clustered directly around the train station, which contains mainly industrial/shopping buildings. This area of Utrecht is less residential and more aimed at transportation/shopping districts/businesses.</p>
+									<p>We can therefore conclude that there are more residences within a 5 minute walking distance than within a 1 or 2 minute walking distance.</p>
+								</div>
+								<div class="column" style="flex:1 1 320px; max-width:480px;">
+									<img src="images/WIP_Isochrome_Interactive.png" alt="Vector Map Example" style="width:100%; height:auto; display:block; border:1px solid #ddd;" />
+								</div>
+							</div>
+					
+						</div>
+						<hr />
+					
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
